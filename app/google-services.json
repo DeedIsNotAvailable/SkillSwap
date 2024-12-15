@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "788104514537",
+    "firebase_url": "https://wisdomshare-c94cb-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "wisdomshare-c94cb",
+    "storage_bucket": "wisdomshare-c94cb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788104514537:android:1a9c6098b6e0eb8ac31978",
+        "android_client_info": {
+          "package_name": "com.example.wisdomshare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzlxohnvdmENRbwxdp8LkMqUU8Jzo3__o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

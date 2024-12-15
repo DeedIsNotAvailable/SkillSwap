@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="99"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Поиск"
+            android:textStyle="bold"
+            android:textColorHint="@color/wswhi"
+            android:layout_weight="33"
+            android:background="@drawable/menu_btn_background"/>
+        <Button
+            android:id="@+id/chatsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Чаты"
+            android:textStyle="bold"
+            android:textColorHint="@color/wswhi"
+            android:layout_weight="33"
+            android:background="@drawable/menu_btn_background"/>
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Профиль"
+            android:textStyle="bold"
+            android:textColorHint="@color/wswhi"
+            android:layout_weight="33"
+            android:background="@drawable/menu_btn_background"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txttop"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Выбирите навык по которому вы хотите найти людей:"
+        android:textColor="@color/wsprime"
+        android:textStyle="bold"
+        android:textSize="10pt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/physcats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/txttop">
+
+        <TextView
+            android:id="@+id/txtphys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Физическая активность"
+            android:textColor="@color/wssec"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_below="@+id/txttop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtphys"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/runButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:hint="Бег"
+                android:textStyle="bold"
+                android:textColorHint="@color/wswhi"
+                android:background="@drawable/menu_btn_background"/>
+
+            <Button
+                android:id="@+id/swimButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:hint="Плавание"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bicycleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:hint="Велосипед"
+                android:textStyle="bold"
+                android:textColorHint="@color/wswhi"
+                android:background="@drawable/menu_btn_background"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sportcats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/physcats">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Спорт"
+            android:textColor="@color/wsyellow"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_below="@+id/txttop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/footballButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:backgroundTint="@color/wsyellow"
+                android:hint="Футболл"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/basketButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:backgroundTint="@color/wsyellow"
+                android:background="@drawable/menu_btn_background"
+                android:hint="Басектболл"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/hockyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:hint="Хоккей"
+                android:backgroundTint="@color/wsyellow"
+                android:textStyle="bold"
+                android:textColorHint="@color/wswhi"
+                android:background="@drawable/menu_btn_background"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chessButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:backgroundTint="@color/wsyellow"
+                android:hint="Шахматы"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/musiccats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/sportcats">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Музыка"
+            android:textColor="@color/wspurple"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_below="@+id/txttop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/violinButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:backgroundTint="@color/wspurple"
+                android:hint="Скрипка"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/pianoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:backgroundTint="@color/wspurple"
+                android:background="@drawable/menu_btn_background"
+                android:hint="Пианино"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/guitarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:hint="Гитара"
+                android:backgroundTint="@color/wspurple"
+                android:textStyle="bold"
+                android:textColorHint="@color/wswhi"
+                android:background="@drawable/menu_btn_background"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/drummButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:backgroundTint="@color/wspurple"
+                android:hint="Барабаны"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/accordButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:backgroundTint="@color/wspurple"
+                android:hint="Аккордеон"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/othercats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/musiccats">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прочее"
+            android:textColor="@color/wsgreen"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:layout_below="@+id/txttop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/drawingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/menu_btn_background"
+                android:backgroundTint="@color/wsgreen"
+                android:hint="Рисование"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cookingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:backgroundTint="@color/wsgreen"
+                android:background="@drawable/menu_btn_background"
+                android:hint="Готовка"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:textColorHint="@color/wswhi"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sewingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:hint="Шитье"
+                android:backgroundTint="@color/wsgreen"
+                android:textStyle="bold"
+                android:textColorHint="@color/wswhi"
+                android:background="@drawable/menu_btn_background"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

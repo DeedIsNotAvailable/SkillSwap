@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="99"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Поиск"
+            android:textStyle="bold"
+            android:textColorHint="@color/wswhi"
+            android:layout_weight="33"
+            android:background="@drawable/menu_btn_background"/>
+        <Button
+            android:id="@+id/chatsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Чаты"
+            android:textStyle="bold"
+            android:textColorHint="@color/wswhi"
+            android:layout_weight="33"
+            android:background="@drawable/menu_btn_background"/>
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Профиль"
+            android:textStyle="bold"
+            android:textColorHint="@color/wswhi"
+            android:layout_weight="33"
+            android:background="@drawable/menu_btn_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/namemenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Имя"
+            android:layout_centerHorizontal="true"
+            android:textSize="8pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egor"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/wsprime"
+            android:textSize="8pt"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mailmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/namemenu"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Почта"
+            android:layout_centerHorizontal="true"
+            android:textSize="8pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/email_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:text="Egor@mail.com"
+            android:textColor="@color/wsprime"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/skillmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/mailmenu"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Навык"
+            android:layout_centerHorizontal="true"
+            android:textSize="8pt"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/skill_txt"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Плаванье"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/wsprime"
+            android:textSize="8pt"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
